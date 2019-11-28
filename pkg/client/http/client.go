@@ -9,7 +9,7 @@ import (
 
 type Client struct {
 	rawClient *http.Client
-	balancer  balance.Balancer
+	balancer  *balance.Balancer
 }
 
 func New() *Client {
